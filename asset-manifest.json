@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/audio-visualization-2/static/css/main.41746476.chunk.css",
+    "main.js": "/audio-visualization-2/static/js/main.df74cc83.chunk.js",
+    "main.js.map": "/audio-visualization-2/static/js/main.df74cc83.chunk.js.map",
+    "runtime-main.js": "/audio-visualization-2/static/js/runtime-main.3b667f3d.js",
+    "runtime-main.js.map": "/audio-visualization-2/static/js/runtime-main.3b667f3d.js.map",
+    "static/js/2.5910adae.chunk.js": "/audio-visualization-2/static/js/2.5910adae.chunk.js",
+    "static/js/2.5910adae.chunk.js.map": "/audio-visualization-2/static/js/2.5910adae.chunk.js.map",
+    "index.html": "/audio-visualization-2/index.html",
+    "precache-manifest.8050367076d988af0332612b8aa186c8.js": "/audio-visualization-2/precache-manifest.8050367076d988af0332612b8aa186c8.js",
+    "service-worker.js": "/audio-visualization-2/service-worker.js",
+    "static/css/main.41746476.chunk.css.map": "/audio-visualization-2/static/css/main.41746476.chunk.css.map",
+    "static/js/2.5910adae.chunk.js.LICENSE": "/audio-visualization-2/static/js/2.5910adae.chunk.js.LICENSE",
+    "static/media/audio.mp3": "/audio-visualization-2/static/media/audio.508ad8e4.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b667f3d.js",
+    "static/js/2.5910adae.chunk.js",
+    "static/css/main.41746476.chunk.css",
+    "static/js/main.df74cc83.chunk.js"
+  ]
+}
