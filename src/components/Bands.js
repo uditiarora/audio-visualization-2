@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Upload from './Upload';
 import Paper from '@material-ui/core/Paper';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
@@ -23,7 +24,7 @@ function Bands(props){
         let domElements = props.frequencyBandArray.map((num) => document.getElementById(num));
       props.frequencyBandArray.forEach((num) => {
         domElements[num].style.backgroundColor = `rgb(255, ${amplitudeValues.current[num]}, 255)`
-        domElements[num].style.height = `${amplitudeValues.current[num]}px`
+        domElements[num].style.height = `${amplitudeValues.current[num]/1.2}px`
       });
     };
 
@@ -40,12 +41,20 @@ function Bands(props){
 
     return(
     <div>
-        <div>
-        <Tooltip title = "Start" aria-label = "Start" placement = "right">
-            <IconButton id = "startButton" onClick = {() => handleStartButton()} disabled = {!!props.audioData ? true : false}>
-                <PlayCircleOutlineIcon  />
-            </IconButton>
-        </Tooltip>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <Upload />
+            </div>
+            <div className="col-md-4">
+              <Tooltip title = "Start" aria-label = "Start" placement = "right">
+                  <IconButton id = "startButton" onClick = {() => handleStartButton()} disabled = {!!props.audioData ? true : false}>
+                      <PlayCircleOutlineIcon  />
+                  </IconButton>
+              </Tooltip>
+            </div>
+          </div>
+          
         </div>
         <div className={classes.flexContainer}>
           {props.frequencyBandArray.map((num) =>

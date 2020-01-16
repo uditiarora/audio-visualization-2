@@ -12,11 +12,10 @@ class Container extends React.Component {
 
     initialize = () => {
         const audioFile = new Audio();
-        audioFile.crossOrigin = "anonymous";
         const audioContext = new AudioContext();
         const source = audioContext.createMediaElementSource(audioFile);
         const analyser = audioContext.createAnalyser();
-        audioFile.src = "https://drive.google.com/open?id=1k6ftsQupYbyoHiA8XUn93ngqURgiYCNT";
+        audioFile.src = audio;
         analyser.fftSize = 64;
         source.connect(audioContext.destination);
         source.connect(analyser);
