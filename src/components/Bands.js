@@ -22,7 +22,7 @@ function Bands(props){
         amplitudeValues.current = newData;
         let domElements = props.frequencyBandArray.map((num) => document.getElementById(num));
       props.frequencyBandArray.forEach((num) => {
-        domElements[num].style.backgroundColor = `rgb(0, ${amplitudeValues.current[num]}, 255)`
+        domElements[num].style.backgroundColor = `rgb(255, ${amplitudeValues.current[num]}, 255)`
         domElements[num].style.height = `${amplitudeValues.current[num]}px`
       });
     };
