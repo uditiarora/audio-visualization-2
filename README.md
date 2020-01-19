@@ -19,6 +19,7 @@ This is version-2 of [audio-visualization](https://github.com/uditiarora/audio-v
     ```
 
 
-![gif](audio.gif)
 
 #### Note : The server runs in node and gh-pages render only the static content. The website is only to get a feel of the UI and will only work if hosted locally.
+
+![gif](audio.gif)
