@@ -6,9 +6,7 @@ const numberOfBands = 25;
 class Container extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            bandColor: "Blue"
-        };
+        this.state = {};
         this.frequencyBandArray = [...Array(numberOfBands).keys()];
     }
 
@@ -34,10 +32,6 @@ class Container extends React.Component {
         changeStyle(amplitudeArray);
     }
 
-    setColor = (event) => {
-        this.setState({bandColor: event.target.value});
-    }
-
     render() {
         return(
             <div>
@@ -46,8 +40,6 @@ class Container extends React.Component {
                 frequencyBandArray = {this.frequencyBandArray}
                 getData = {this.getData}
                 audioData = {this.state.audioData}
-                setColor = {this.setColor}
-                bandColor = {this.state.bandColor}
                 />
             </div>
         );
