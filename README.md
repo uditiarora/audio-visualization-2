@@ -1,6 +1,6 @@
 # audio-visualization-2
 
-#### The app is now available
+
 An audio visualization react app which when played visualizes audio on the basis of amplitude.
 This is version-2 of [audio-visualization](https://github.com/uditiarora/audio-visualization).
 
